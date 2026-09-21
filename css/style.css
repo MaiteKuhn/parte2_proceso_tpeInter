@@ -3,16 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #24145c;
     color: white;
 }
-
-
 /*Header*/
-
 .header {
     height: 80px;
     background-color: #291765;
@@ -23,8 +19,6 @@ body {
 
     padding: 0 35px;
 }
-
-
 /*Menu hamb*/
 
 .menu-btn {
@@ -36,20 +30,14 @@ body {
 
     cursor: pointer;
 }
-
-
 /*Logo*/
-
 .logo {
     color: #e99aff;
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 3px;
 }
-
-
 /*Barra buscador*/
-
 .buscador {
     display: flex;
     align-items: center;
@@ -108,4 +96,79 @@ body {
     font-size: 30px;
 
     cursor: pointer;
+}
+.carrusel {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.juegos {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.juego {
+    flex: 0 0 250px;
+}
+
+.juego img {
+    width: 100%;
+    display: block;
+}
+
+.flecha-carrusel {
+    position: absolute;
+    top: 65px;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.flecha-carrusel.izquierda {
+    left: 10px;
+}
+
+.flecha-carrusel.derecha {
+    right: 10px;
+}
+.footer { 
+    padding: 40px; 
+} 
+.footer-columnas { 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 30px; 
+} 
+.footer-columna h3 { 
+    margin-bottom: 15px; 
+} 
+.footer-columna a { 
+    margin-bottom: 10px; 
+    text-decoration: none; 
+    color: #ffffff;
+} 
+.columna-pago, .columna-contacto , .footer-columna { 
+    display: flex; 
+    flex-direction: column; 
+} 
+.columna-contacto { 
+    margin-top: 30px; 
+} 
+.columna-pago img, .columna-contacto img { 
+    width: 40px; 
+    height: auto; 
+    margin-bottom: 10px;
+ } 
+.copyright { 
+    text-align: center;
+    margin-top: 40px; 
 }
