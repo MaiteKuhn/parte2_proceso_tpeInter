@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family:roboto, sans-serif;
     background-color: #24145c;
     color: white;
+}
+.h1, h2, h3 {
+    font-family: Overpass, sans-serif;
+    color: #fca8ff; 
 }
 /*Header*/
 .header {
@@ -96,6 +100,63 @@ body {
     font-size: 30px;
 
     cursor: pointer;
+}
+.menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+    width: 220px;
+    padding: 20px;
+
+    background-color: #291765;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+
+    z-index: 100;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menu a:hover {
+    color: #f0a1ff;
+}
+.menu.menu-abierto {
+    transform: translateX(0);
+}
+.submenu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+    color: #9D8BD8;
+}
+.btn-categorias {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+
+    padding: 0;
+}
+.submenu.submenu-abierto {
+    display: flex;
 }
 .carrusel {
     position: relative;

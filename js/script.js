@@ -21,3 +21,15 @@ carruseles.forEach(carrusel => {
     });
 
 });
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("menu-abierto");
+});
+const btnCategorias = document.querySelector(".btn-categorias");
+const submenu = document.querySelector(".submenu");
+
+btnCategorias.addEventListener("click", () => {
+    submenu.classList.toggle("submenu-abierto");
+});
