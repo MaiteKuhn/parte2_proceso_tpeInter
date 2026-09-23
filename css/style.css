@@ -8,19 +8,17 @@ body {
     background-color: #24145c;
     color: white;
 }
-.h1, h2, h3 {
-    font-family: Overpass, sans-serif;
+h1, h2, h3 {
+    font-family: overpass, monospace;
     color: #fca8ff; 
 }
 /*Header*/
 .header {
     height: 80px;
     background-color: #291765;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 35px;
 }
 /*Menu hamb*/
@@ -71,6 +69,7 @@ body {
     flex-direction: column;
     gap: 10px;
     padding-left: 15px;
+    color: #9d8bd8;
 }
 .btn-categorias {
     width: 100%;
@@ -153,6 +152,18 @@ body {
     color: #f0a1ff;
     font-size: 30px;
     cursor: pointer;
+}
+
+.btn-jugar-ahora {
+  align-self: flex-end;
+  background-color: #9d8bd8;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 /*pagina peg*/
@@ -571,10 +582,9 @@ transition: all 0.2s ease;
     margin: 20px auto 0 auto;
 }
 .login {
-    min-height: 100vh;
+     min-height: calc(100vh - 80px);
     background-image: url("../assets/img/fondo-form.png");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 
     display: flex;
@@ -585,10 +595,8 @@ transition: all 0.2s ease;
 .login-box {
     width: 400px;
     padding: 40px;
-
     background-color: #291765;
     border-radius: 15px;
-
     text-align: center;
 }
 
@@ -606,36 +614,21 @@ transition: all 0.2s ease;
 .login-box input {
     height: 45px;
     padding: 0 15px;
-
     border: none;
     border-radius: 7px;
-
     background-color: #43299e;
     color: white;
     font-size: 16px;
-
     outline: none;
-}
-
-.login-box input::placeholder {
-    color: #cbb8e8;
 }
 
 .login-box button {
     height: 45px;
-
     border: none;
     border-radius: 7px;
-
-    background-color: #fca8ff;
+    background-color: #9d8bd8;
     color: #24145c;
-
     font-size: 16px;
     font-weight: bold;
-
     cursor: pointer;
-}
-
-.login-box button:hover {
-    background-color: #ffffff;
 }
