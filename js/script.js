@@ -35,7 +35,8 @@ btnCategorias.addEventListener("click", () => {
 });
 
 
-//API
+//API 
+
 const contenedores = document.querySelectorAll('.carrusel .juegos');
 
 fetch('https://vj.interfaces.jima.com.ar/api/v2')

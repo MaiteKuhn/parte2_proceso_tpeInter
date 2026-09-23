@@ -479,10 +479,7 @@ transition: all 0.2s ease;
   transition: color 0.2s ease;
 }
 
-.btn-action:hover, 
-.btn-responder:hover {
-  color: #d946ef;
-}
+
 .juegos-recomendados {
   display: flex;
   flex-direction: column;
@@ -631,13 +628,9 @@ transition: all 0.2s ease;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-<<<<<<< HEAD
-=======
+
 }
 
-.login-box button:hover {
-    background-color: #ffffff;
-}
 
 
 /*Cards*/
@@ -648,8 +641,11 @@ transition: all 0.2s ease;
   width: 240px;
   height: 140px;
   color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 26px rgba(28, 10, 57, 0.4);
   flex-shrink: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
 }
 .juego img {
   width: 100%;
@@ -666,6 +662,7 @@ transition: all 0.2s ease;
   padding: 10px 12px;
   background: linear-gradient(180deg, transparent 25%, rgba(109, 70, 168, 0.92)70%);
   box-sizing: border-box;
+  
 }
 .info-texto {
  display: flex;
@@ -695,9 +692,6 @@ transition: all 0.2s ease;
   font-weight: bold;
   cursor:pointer;
   white-space: nowrap;
-transition: background-color 0.2s ease;
-}
-.btn-jugar:hover {
-  background-color: #a188f0;
->>>>>>> 21cad5a0f36267fefeb2678bea7261434731cd6e
+  box-shadow: 0 16px 26px rgba(28, 10, 57, 0.4);
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
