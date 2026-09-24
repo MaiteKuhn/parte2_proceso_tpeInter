@@ -27,10 +27,12 @@ const menu = document.querySelector(".menu");
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("menu-abierto");
 });
+
 const btnCategorias = document.querySelector(".btn-categorias");
 const submenu = document.querySelector(".submenu");
 
-btnCategorias.addEventListener("click", () => {
+btnCategorias.addEventListener("click", (event) => {
+    event.preventDefault();
     submenu.classList.toggle("submenu-abierto");
 });
 
