@@ -14,7 +14,7 @@
         <div class="acciones">
                 <button><img src="assets/img/fav.png" alt="Favoritos"></button>
                 <button><img src="assets/img/carrito.png" alt="Carrito"></button>
-                <button><img src="assets/img/usuario.png" alt="Usuario"></button>
+                <button><img src="assets/img/user.png" alt="Usuario"></button>
         </div>
     </header>
     <nav class="menu">
@@ -41,15 +41,24 @@
         </div>
     </nav>
     <main>
-        
-            <section class="hero">
-                <button class="flecha izq"></button>
-                <div class="hero-contenido">
-                    <button class="btn-jugar-ahora">Jugar Ahora</button>
-                </div>
-                <button class="flecha derecha"></button>
-            </section>
+        <section class="banner-principal">
+  <img id="banner-img" src="assets/img/pegsolitaire (2).jpg" alt="Juego Destacado" class="banner-fondo">
 
+  <button class="banner-flecha izquierda" id="banner-prev">‹</button>
+  <button class="banner-flecha derecha" id="banner-next">›</button>
+
+  <!-- Contenido flotante -->
+  <div class="banner-contenido">
+    <a href="juego.html" class="btn-jugar-banner">Jugar ahora</a>
+    
+    <!-- Dots / Indicadores -->
+    <div class="banner-dots">
+      <span class="dot activo" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+</section>
             <section class="carruseles">
                 <div class="carrusel">
                     <h2> Recomendados segun tus favoritos</h2>
@@ -60,8 +69,8 @@
                     <button class="flecha-carrusel derecha">›</button>
                 </div> 
                 
-                  <div class="carrusel">
-                    <h2>Deportes</h2>
+        <div class="carrusel">
+                        <h2>Deportes</h2>
                     <button class="flecha-carrusel izquierda">‹</button>
                         <div class="juegos">
                         <!-- Los juegos de la API se ponen aca -->
@@ -69,8 +78,9 @@
                     <button class="flecha-carrusel derecha">›</button>
                 </div> 
         
-                  <div class="carrusel">
-                    <h2>En pareja</h2>
+<div class="carrusel">     
+                       
+    <h2>En pareja</h2>
                     <button class="flecha-carrusel izquierda">‹</button>
                         <div class="juegos" id="juegos-api">
                         <!-- Los juegos de la API se ponen aca -->
@@ -87,8 +97,8 @@
                     <button class="flecha-carrusel derecha">›</button>
                 </div> 
 
-                  <div class="carrusel">
-                    <h2>Cocina</h2>
+<div class="carrusel">                    
+    <h2>Cocina</h2>
                     <button class="flecha-carrusel izquierda">‹</button>
                         <div class="juegos" id="juegos-api">
                         <!-- Los juegos de la API se ponen aca -->
