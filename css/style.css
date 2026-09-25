@@ -36,16 +36,15 @@ h1, h2, h3 {
     top: 80px;
     left: 0;
     width: 220px;
+    height: 400px;
     padding: 20px;
     background-color: #291765;
-
+    border-radius: 11px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-
     transform: translateX(-100%);
     transition: transform 0.3s ease;
-
     z-index: 100;
 }
 
@@ -53,11 +52,18 @@ h1, h2, h3 {
 .menu a {
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu > a, .btn-categorias {
+    display: flex;
+    align-items: center;
+    min-height: 17px;
+    transition: color 0.2s ease;
 }
 
 .menu a:hover {
-    color: #f0a1ff;
+    color: #f3a1ff;
 }
 
 /* Abrir menú */
@@ -70,12 +76,33 @@ h1, h2, h3 {
     width: 100%;
 }
 
+.menu-inf {
+  margin-top: auto;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-inf a {
+    display: block;
+    width: 100%;
+}
+
 .btn-categorias {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
     width: 100%;
+}
+
+.btn-categorias span {
+    font-size: 11px;
+    color: #f3a1ff;
 }
 
 /* Submenú */
